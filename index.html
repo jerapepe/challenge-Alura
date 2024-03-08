@@ -11,14 +11,27 @@
         <h1>Encriptador de texto</h1>
         <div class="text-encript">
             <h2>Texto a encriptar</h2>
+            <textarea id="textArea" placeholder="Type here..." class="text-area" oninput="toggleImageVisibility(this)"></textarea>
+        </div>
+        <div class="boton">
+            <button class="btn-change">
+                <svg class="change">
+                    <path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M8 7L20 7M20 7L16 3M20 7L16 11M16 17L4 17M4 17L8 21M4 17L8 13">
+                    </path>
+                </svg>
+            </button>
         </div>
         <div class="buttons">
-            <button class="button">Encriptar</button>
-            <button class="button2">Desencriptar</button>
+            <button class="button" id="encript">Encriptar</button>
+            <button class="button button2" id="desencript">Desencriptar</button>
         </div>
         <div class="text-to-encript">
             <h2>Texto encriptado</h2>
+            <img src="image.png" alt="Imagen" id="miImagen" class="initial-image">
+            <textarea id="textAreas" placeholder="Here..." class="text-area" oninput="toggleImageVisibility(this)" disabled></textarea>
+            <button class="button btn-copy" id="copy">Copiar</button>
         </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
